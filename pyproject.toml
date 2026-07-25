@@ -19,6 +19,15 @@ dependencies = [
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
+
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+
+    "Topic :: Internet :: Proxy Servers",
+    "Topic :: System :: Networking",
+    "Topic :: Internet",
+
+    "Typing :: Typed",
 ]
 
 [project.urls]

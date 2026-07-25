@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/flared.egg-info/PKG-INFO
+src/flared.egg-info/SOURCES.txt
+src/flared.egg-info/dependency_links.txt
+src/flared.egg-info/requires.txt
+src/flared.egg-info/top_level.txt

@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: flared
+Version: 0.1.0
+Summary: A Python interface for creating Cloudflare quick tunnels and access proxies
+Author-email: Tejas <tejas.tawade@proton.me>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/TejasPersonal/flared
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Internet :: Proxy Servers
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Internet
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: yarl
+Dynamic: license-file
+
+# flared
+
+Python client for [`cloudflared`](https://github.com/cloudflare/cloudflared) quick tunnels and access proxies.
+
+## Install
+
+```bash
+pip install flared
+```
+
+## Basic Usage
+
+```python
+from yarl import URL
+from flared import QuickTunnel
+
+tunnel = QuickTunnel(URL("http://localhost:8000"))
+print(tunnel)
+```
