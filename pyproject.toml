@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flared"
+version = "0.1.0"
+description = "A Python interface for creating Cloudflare quick tunnels and access proxies"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Tejas", email = "tejas.tawade@proton.me" }
+]
+dependencies = [
+    "requests",
+    "yarl",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/TejasPersonal/flared"
+
+[tool.setuptools.packages.find]
+where = ["src"]
