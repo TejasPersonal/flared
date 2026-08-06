@@ -5,9 +5,10 @@ import json
 import os
 import signal
 import subprocess
+from collections.abc import Callable, Iterable
 from socket import AF_INET, SO_REUSEADDR, SOCK_STREAM, SOL_SOCKET, socket
 from threading import Event, Thread
-from typing import Any, Callable, Iterable
+from typing import Any
 
 import requests
 from yarl import URL
